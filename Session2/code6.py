@@ -5,8 +5,8 @@ lst.count(2)    #2
 lst.index(20)   #1
 lst.insert(1,30)
 lst.pop()
-lst.pop(1)  #20
-lst.remove(20)
+lst.pop(1)  #20             Deletes value by key
+lst.remove(20) #201         Deletes by value 
 lst.reverse()
 lst.sort(reverse=True)
 

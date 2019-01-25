@@ -1,5 +1,8 @@
-def Power(a,b):
-    return a**b
+def Power(a, b):
+    s = 1
+    for _ in range(b):
+        s *= a
+    return s
 
 
 x = int(input())

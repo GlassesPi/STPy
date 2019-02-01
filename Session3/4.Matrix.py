@@ -1,4 +1,9 @@
-a = [[1, 2], [3, 4]]
+a = []
+for i in range(2):
+        t = []
+        for j in range(2):
+                t.append(input("Enter Element({},{}): ".format(i, j)))
+        a.append(t)
 
 for i in range(2):
     for j in range(2):

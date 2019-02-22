@@ -15,6 +15,15 @@ class Account():
         else:
             return 'Failure'
 
+
+class ShortTermDeposit(Account):
+    def __init__(self, r):
+        super().__init__()
+        self.rate = r
+
+    def add_profit(self):
+        self.savings *= (1 + self.rate / 100)
+
     def __str__(self):
         return 'Savings: {}, Withdrawable: {}'.format(self.savings, self.savings - 10000)
 
@@ -29,7 +38,12 @@ a1 = Account()
 a1.deposit(50000)
 a1.withdraw(40000)
 a1.deposit(100000)
-print(a1)
-for x in a1.top_two():
-    print(x)
+s1 = ShortTermDeposit(10)
+s1.deposit(10000)
+s1.add_profit()
+print(s1)
+
+# print(a1)
+# for x in a1.top_two():
+#     print(x)
 

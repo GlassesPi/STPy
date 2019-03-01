@@ -15,5 +15,7 @@ class OddEvenTester(unittest.TestCase):
         self.assertEqual(OddEven(5), 'odd')
     def test_invalid(self):
         self.assertEqual(OddEven(-1), 'invalid')
+    def test_all(self):
+        self.ass
 
 unittest.main()

@@ -30,7 +30,9 @@ class ShortTermDeposit(Account):
     def __le__(self, other):
         return self.savings <= other.savings
 
-    def top_two(self):
+    def top_two(self):print(a1)
+# for x in a1.top_two():
+#     print(x)
         return self.transactions[-1:-3:-1]
 
 

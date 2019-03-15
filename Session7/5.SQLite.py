@@ -7,6 +7,7 @@
 # conn.close()
 
 
+
 import sqlite3
 conn = sqlite3.connect('my_db.db')
 c = conn.cursor()
